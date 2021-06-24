@@ -1,0 +1,20 @@
+package com.colfondos.pruebatecnicacol.exception;
+
+
+public class CustomSecurityException extends Exception {
+	private static final long serialVersionUID = 1L;
+	
+	private static String mensaje;
+
+	public CustomSecurityException(String... exceptionMsg) {
+		super(llenarMensaje(exceptionMsg));
+	}
+
+	private static String llenarMensaje(String... exceptionMsg) {
+		mensaje = "";
+		for (String data : exceptionMsg) {
+			mensaje = mensaje + data;
+		}
+		return mensaje;
+	}
+}

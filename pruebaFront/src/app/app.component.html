@@ -1,0 +1,43 @@
+<div class="body">
+  <div class="header1">
+  </div>
+
+
+
+  <form #previnculacion="ngForm" id="frmPrevinculacion" role="form" aria-label="Validar encargo">
+
+    <div class="fo">
+      <label>por favor tenga en cuenta que todos los campos son obligatorios con son las siguientes recomendaciones :  </label>
+      <br>
+      <label>-Número de identificación solo recibe numeros </label>
+      <br>
+      <label>-Tel campo email valida el formato standar de un correo</label>
+      <br>
+      <label>-Número de identificación solo recibe numeros </label>
+    </div>
+    <div class="fo">
+      <label>tipo de Identificación</label>
+      <select name="tipoDocumento" required [(ngModel)]="identElegida" (change)="capturar()">
+        <option value="" >Seleccione ...</option>
+        <option [value]="parameter.id" *ngFor="let parameter of parameters">
+          {{parameter.description}}
+        </option>
+      </select>
+    </div>
+    <div class="fo">
+      <label>Número Identificación</label>
+      <input name="numDocumento"  id="numDocumento" pattern="[0-9]+" maxlength="10" required type="text" [(ngModel)]="client.numberid">
+    </div>
+    <div class="fo">
+      <label>Correo</label>
+      <input type="text" [(ngModel)]="client.email" required name="correo" id="correo" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" maxlength="100" required>
+    </div>
+    <div class="fo">
+      <label>Celular</label>
+      <input required [(ngModel)]="client.cellphone" pattern="[0-9]+" name="celular" id="celular" maxlength="10" required>
+    </div>
+    <div class="fo" >
+      <button [disabled]="previnculacion.invalid " (click)="guardar()">Guardar</button>
+    </div>
+  </form>
+</div>

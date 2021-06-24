@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+.header1{
+    height: 50px;
+    font-size: 16px;
+    background-color:#002f58;
+    color: #ffffff;  
+    padding-left: 4%;  
+    top: 0;
+  }
+
+  label{
+
+    font-size: 12px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.4;
+    letter-spacing: normal;
+    text-align: left;
+    color: #9b9b9b;
+    height: min-content;
+    text-transform: uppercase;
+  } 
+  
+  input{
+    width: 100%;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+    border-bottom: 1px solid;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.2;
+    letter-spacing: normal;
+    text-align: left;
+    color: #001c41;
+  }
+  
+  input.ng-dirty.ng-invalid {
+    border-bottom: 3px solid #b82628;
+
+  }
+  
+  button {
+    margin-top: 10px;
+    height: 40px;
+    min-width: min-content;
+    border: solid 3px #0370d1;
+    background-color: #2377cb;
+    font-family: Krub;
+    font-size: 16px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.05;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  button-:disabled {
+    font-family: Krub;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    height: 40px;
+    color: #9b9b9b;  
+    background-color:#d8d8d8;
+    border: 0px;
+  }
+  
+  
+  select {
+     background: transparent;
+     border: none;
+     font-size: 14px;
+     height: 30px;
+     padding: 5px;
+     width: 100%;
+  }
+  
+  select:focus{
+    outline: none;
+  }
+  
+  .fo{
+    margin-top:10px;
+    width: 40%;
+  }
+
+  .body {
+      align-content: center;
+  }
+  

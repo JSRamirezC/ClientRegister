@@ -1,0 +1,12 @@
+package com.colfondos.pruebatecnicacol.repository;
+
+import com.colfondos.pruebatecnicacol.dtos.Client;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import java.util.List;
+
+public interface ClientRepository extends JpaRepository<Client,Integer> {
+
+    Client findByNumberid(Integer id);
+
+}
